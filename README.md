@@ -6,8 +6,11 @@ Homebrew tap for [cmd-hanyoung](https://github.com/temeraire97/cmd-hanyoung).
 
 ```bash
 brew tap temeraire97/tap
+brew trust temeraire97/tap
 brew install --cask cmd-hanyoung
 ```
+
+`brew trust` is required because Homebrew (2026) blocks third-party tap casks until trusted.
 
 ## Note — Notarization
 
