@@ -7,12 +7,12 @@ cask "cmd-hanyoung" do
   desc "Tap left Command for English, right Command for Korean input switching"
   homepage "https://github.com/temeraire97/cmd-hanyoung"
 
-  depends_on macos: ">= :sonoma"
-
   livecheck do
     url :url
     strategy :github_latest
   end
+
+  depends_on macos: :sonoma
 
   app "cmd-hanyoung.app"
 
