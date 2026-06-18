@@ -1,6 +1,6 @@
 cask "cmd-hanyoung" do
   version "0.1.0"
-  sha256 "e2bf7a15dc2b8ae506db1e7ddb5331c53eaacf71721930ce74e52ca1956afc32"
+  sha256 "b1381279190d95aa584cc62758cace87a35b363d002f79e8c1ed941637e0893a"
 
   url "https://github.com/temeraire97/cmd-hanyoung/releases/download/v#{version}/cmd-hanyoung-#{version}.zip"
   name "cmd-hanyoung"
