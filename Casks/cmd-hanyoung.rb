@@ -7,6 +7,8 @@ cask "cmd-hanyoung" do
   desc "Tap left Command for English, right Command for Korean input switching"
   homepage "https://github.com/temeraire97/cmd-hanyoung"
 
+  depends_on macos: ">= :sonoma"
+
   livecheck do
     url :url
     strategy :github_latest
@@ -14,9 +16,7 @@ cask "cmd-hanyoung" do
 
   app "cmd-hanyoung.app"
 
-  zap trash: [
-    "~/Library/Preferences/com.cmdhanyoung.app.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.cmdhanyoung.app.plist"
 
   caveats <<~EOS
     cmd-hanyoung needs Accessibility permission:
